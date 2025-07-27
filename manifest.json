@@ -1,0 +1,16 @@
+{
+  "name": "Instagram Direct",
+  "short_name": "IG Direct",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "A shortcut that redirects to Instagram Direct.",
+  "icons": [
+    {
+  "src": "icon.png",
+  "sizes": "1200x1200",
+  "type": "image/png"
+}
+  ]
+}
