@@ -1,41 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Instagram Direct Launcher</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="manifest" href="manifest.json" />
-  <link rel="icon" href="icon.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <style>
-    body {
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background: #fafafa;
+  <meta charset="UTF-8">
+  <title>Redirecting to Instagram Direct</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
     }
-    h1 {
-      margin-bottom: 1em;
-    }
-    button {
-      font-size: 1.25rem;
-      padding: 1em 2em;
-      background-color: #3897f0;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-  </style>
+    window.location.replace("https://www.instagram.com/direct/");
+  </script>
 </head>
 <body>
-  <h1>Open Instagram Direct</h1>
-  <button onclick="window.location.href='https://www.instagram.com/direct/'">
-    Launch
-  </button>
+  <h1>Redirecting to Instagram Direct…</h1>
 </body>
 </html>
