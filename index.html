@@ -2,20 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Instagram Direct Redirect</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
+  <title>Redirecting...</title>
+  <meta http-equiv="refresh" content="1; url=https://www.instagram.com/direct/">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="icon.png">
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
-    }
-    // Delay redirect to prevent GitHub Pages or PWA caching issues
-    setTimeout(() => {
-      window.location.replace("https://www.instagram.com/direct/");
-    }, 10000); // 300ms delay
-  </script>
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
   <h1>Redirecting to Instagram Direct…</h1>
