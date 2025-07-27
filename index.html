@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Redirecting to Instagram Direct</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="icon.png">
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
-    }
-    window.location.replace("https://www.instagram.com/direct/");
-  </script>
-</head>
-<body>
-  <h1>Redirecting to Instagram Direct…</h1>
-</body>
+  <head>
+    <meta http-equiv="refresh" content="0; URL='https://www.instagram.com/direct/'" />
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting to Instagram Direct…</p>
+  </body>
 </html>
